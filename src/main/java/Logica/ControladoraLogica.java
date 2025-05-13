@@ -76,8 +76,8 @@ public class ControladoraLogica {
     }
 
     // Método para buscar un usuario por ID
-    public Usuario getUsuarioById(int id_usuario) {
-        return controlPersis.buscarUsuarioPorId(id_usuario);
+    public Usuario getUsuarioById(int id) {
+        return controlPersis.buscarUsuarioPorId(id);
     }
 
     // Método para eliminar un usuario

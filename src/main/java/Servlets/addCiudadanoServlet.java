@@ -74,6 +74,13 @@ public class addCiudadanoServlet extends HttpServlet {
             return;
         }
 
+        // validar cedula sea de 10 digitos
+        if (documentoCedula.length() != 10) {
+            session.setAttribute("errorMessage", "La cedula debe tener 10 digitos.");
+            response.sendRedirect("svCiudadanos");
+            return;
+        }
+
         // Validar fecha de nacimiento
         Date fechaNacimiento;
         try {

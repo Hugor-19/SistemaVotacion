@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="assets/favicon.jpg">
+    <link rel="icon" type="image/png" href="assets/img/favicon.jpg">
     <title>Gestionar Candidatos</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -162,13 +162,13 @@
                                                     <td><%= c.getApellido() %></td>
                                                     <td><%= c.getCedula() %></td>
                                                     <td><%= c.getPartidoPolitico() %></td>
-                                                    <td><img src="imageServlet?id=<%= c.getId() %>" alt="Foto" width="50" height="50">
-                                                    </td>
+                                                    <td><img src="imageServlet?id=<%= c.getId() %>" alt="Foto" width="50" height="50"></td>
                                                     <td><%= c.getPropuesta() %></td>
                                                     <td><%= c.getEstado() %></td>
                                                     <td>
-                                                        <a href="editCiudadanoServlet.jsp?id=<%= c.getId() %>" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
-                                                        <a href="deleteCiudadanoServlet?id=<%= c.getId() %>" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></a>
+                                                        <a href="editCandidatoServlet?id=<%= c.getId() %>" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                        <a href="eliminarCandidatoServelet?id=<%= c.getId() %>" class="btn btn-danger btn-sm"
+                                                        onclick="return confirm('¿Estás seguro de que deseas eliminar este Candidato?');"><i class="fa-solid fa-trash-can"></i></a>
                                                     </td>
                                                 </tr>
                                             <% } %>
@@ -195,12 +195,12 @@
         });
 
         document.getElementById('imagen').addEventListener('change', function() {
-    const maxFileSize = 10 * 1024 * 1024; // Ejemplo: 10MB
-    if (this.files.length > 0 && this.files[0].size > maxFileSize) {
-        alert('La imagen es demasiado grande. El tamaño máximo permitido es de ' + (maxFileSize / (1024 * 1024)) + 'MB.');
-        this.value = ''; // Limpiar el input file
-    }
-    });
+            const maxFileSize = 10 * 1024 * 1024; // Ejemplo: 10MB
+            if (this.files.length > 0 && this.files[0].size > maxFileSize) {
+                alert('La imagen es demasiado grande. El tamaño máximo permitido es de ' + (maxFileSize / (1024 * 1024)) + 'MB.');
+                this.value = ''; // Limpiar el input file
+            }
+        });
     </script>
 </body>
 </html>

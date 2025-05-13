@@ -141,7 +141,7 @@
   </script>
   <script>
     function logout() {
-        window.location.href = '/SistemaVotacion'; // Redirige al endpoint que cierra la sesiÃ³n
+        window.location.href = '/SistemaVotacion'; // Redirige al endpoint que cierra la sesion
     }
 </script>
 <!-- JavaScript para Mostrar/Ocultar el SubmenÃº -->

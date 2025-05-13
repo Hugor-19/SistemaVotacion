@@ -16,8 +16,10 @@ C:\Users\hugor\OneDrive\Documentos\NetBeansProjects\SistemaVotacion\src\main\jav
 C:\Users\hugor\OneDrive\Documentos\NetBeansProjects\SistemaVotacion\src\main\java\Servlets\addCandidatoServlet.java
 C:\Users\hugor\OneDrive\Documentos\NetBeansProjects\SistemaVotacion\src\main\java\Servlets\addCiudadanoServlet.java
 C:\Users\hugor\OneDrive\Documentos\NetBeansProjects\SistemaVotacion\src\main\java\Servlets\addUsuarioServlet.java
-C:\Users\hugor\OneDrive\Documentos\NetBeansProjects\SistemaVotacion\src\main\java\Servlets\editCuidadanoServlet.java
+C:\Users\hugor\OneDrive\Documentos\NetBeansProjects\SistemaVotacion\src\main\java\Servlets\editCiudadanoServlet.java
 C:\Users\hugor\OneDrive\Documentos\NetBeansProjects\SistemaVotacion\src\main\java\Servlets\editUsuarioServlet.java
+C:\Users\hugor\OneDrive\Documentos\NetBeansProjects\SistemaVotacion\src\main\java\Servlets\eliminarCiudadanoServlet.java
+C:\Users\hugor\OneDrive\Documentos\NetBeansProjects\SistemaVotacion\src\main\java\Servlets\eliminarUsuarioServlet.java
 C:\Users\hugor\OneDrive\Documentos\NetBeansProjects\SistemaVotacion\src\main\java\Servlets\imageServlet.java
 C:\Users\hugor\OneDrive\Documentos\NetBeansProjects\SistemaVotacion\src\main\java\Servlets\loginServlet.java
 C:\Users\hugor\OneDrive\Documentos\NetBeansProjects\SistemaVotacion\src\main\java\Servlets\loginvotardServlet.java

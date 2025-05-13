@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="assets/favicon.jpg">
+  <link rel="icon" type="image/png" href="assets/img/favicon.jpg">
   <title>Gestionar Usuarios</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -106,7 +106,6 @@
                     <div class="form-group">
                       <label for="estado">Estado</label>
                       <select name="estado" class="form-control" required>
-                        <option value="">Seleccionar Estado</option>
                         <option value="activo">Activo</option>
                         <option value="inactivo">Inactivo</option>
                       </select>
@@ -154,8 +153,9 @@
                           <td><%= u.getRol() %></td>
                           <td><%= u.getEstado() %></td>
                           <td>
-                           <a href="editUsuarioServlet.jsp?id=<%= u.getId() %>" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i> Editar</a> 
-                           <a href="deleteUsuarioServlet?id=<%= u.getId() %>" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i> Eliminar</a>
+                           <a href="editUsuarioServlet?id=<%= u.getId() %>" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i> Editar</a> 
+                           <a href="eliminarUsuarioServlet?id=<%= u.getId() %>" class="btn btn-danger btn-sm" 
+                           onclick="return confirm('¿Estás seguro de que deseas eliminar este usuario?');"><i class="fa-solid fa-trash-can"></i> Eliminar</a>
                         </tr>
                       <% } %>
                     </tbody>

@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="assets/favicon.jpg">
+  <link rel="icon" type="image/png" href="assets/img/favicon.jpg">
   <title>Gestionar Ciudadanos</title>
   <!-- Fonts and icons -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -99,8 +99,8 @@
                   </div>
                   <div class="col-md-6 pl-md-1">
                     <div class="form-group">
-                      <label for="numero_documento">Documento de Identidad</label>
-                      <input type="text" class="form-control" id="numero_documento" name="numero_documento" placeholder="Documento de Identidad" required>
+                      <label for="numero_documento">Cédula</label>
+                      <input type="text" class="form-control" id="numero_documento" name="numero_documento" placeholder="Cédula" required>
                     </div>
                   </div>
                 </div>
@@ -176,10 +176,9 @@
                           <td><%= c.getFechaNacimiento() %></td>
                           <td><%= c.getEstado() %></td>
                           <td>
-                            <a href="editCiudadanoServlet.jsp?id=<%= c.getId() %>" class="btn btn-warning btn-sm">
-                              <i class="fa-solid fa-pen-to-square"></i> </a>
-                            <a href="deleteCiudadanoServlet?id=<%= c.getId() %>" class="btn btn-danger btn-sm">
-                              <i class="fa-solid fa-trash-can"></i> </a>
+                            <a href="editCiudadanoServlet?id=<%= c.getId() %>" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i> </a>
+                            <a href="eliminarCiudadanoServlet?id=<%= c.getId() %>" class="btn btn-danger btn-sm"
+                            onclick="return confirm('¿Estás seguro de que deseas eliminar este Ciudadano?');"><i class="fa-solid fa-trash-can"></i> </a>
                           </td>
                         </tr>
                       <% } %>
