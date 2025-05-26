@@ -80,7 +80,7 @@
         /* Specific colors for icons to match black-dashboard theme */
         .text-primary { color: #41a1ff !important; }
         .text-success { color: #00f2c3 !important; }
-        .text-info { color: #2dce89 !important; }
+        .text-info { color:rgb(206, 142, 45) !important; }
         .text-warning { color: #ff8d72 !important; }
 
         /* Styles for the "No data" alert */
@@ -226,7 +226,6 @@
             const chartPalette = [
                 'rgba(65, 161, 255, 0.9)',  // Blue
                 'rgba(0, 242, 195, 0.9)',   // Green
-                'rgba(45, 206, 137, 0.9)',  // Teal
                 'rgba(255, 141, 114, 0.9)', // Orange
                 'rgba(173, 52, 235, 0.9)',  // Purple
                 'rgba(245, 54, 92, 0.9)',   // Red

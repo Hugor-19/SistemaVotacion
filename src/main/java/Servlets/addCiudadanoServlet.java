@@ -74,13 +74,12 @@ public class addCiudadanoServlet extends HttpServlet {
             return;
         }
 
-        // Validar que la cédula tenga estrictamente más de 7 dígitos
-        if (documentoCedula.length() <= 7) {
-           session.setAttribute("errorMessage", "La cédula debe tener más de 7 dígitos.");
-           response.sendRedirect("svCiudadanos");
-           return;
-       }
-
+        // Validar que la cédula tenga entre 7 y 10 dígitos (inclusive)
+        if (documentoCedula.length() < 7 || documentoCedula.length() > 10) {
+            session.setAttribute("errorMessage", "La cédula debe tener entre 7 y 10 dígitos.");
+            response.sendRedirect("svCiudadanos");
+            return;
+        }
 
         // Validar fecha de nacimiento
         Date fechaNacimiento;
